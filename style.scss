@@ -28,8 +28,11 @@ body {
 }
 
 .top-box {
-    width: 769px;
     margin-bottom: 48px;
+}
+
+.break {
+    display: block;
 }
 
 .welcome {
@@ -83,10 +86,33 @@ body {
 
 }
 
+.title {
+    color: rgba(255, 255, 255, 1);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 94px;
+}
+
+.abtgames-text {
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 24px;
+    padding-bottom: 72px;
+}
+
+
 .abtgames {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 32px;
+    padding-bottom: 50px;
 }
 
 .abtgames__item {
