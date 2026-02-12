@@ -12,12 +12,11 @@ body {
 }
 
 .center {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
+  padding-left: calc(50% - 720px);
+  padding-right: calc(50% - 720px);
 }
 
 .top {
-  height: 800px;
   background: rgb(225, 255, 143);
   background-image: url(img/header-bkg.png);
   background-repeat: no-repeat;
@@ -25,12 +24,78 @@ body {
   background-size: cover;
 }
 
+.svg-vektor {
+  position: absolute;
+  right: -488px;
+  top: -333.46px;
+  transform: rotate(0deg);
+}
+
+.svg-vektor4780 {
+  position: absolute;
+  right: 269px;
+  top: -10px;
+}
+
+.svg-vektor4781 {
+  position: absolute;
+  right: 254px;
+  top: 231px;
+}
+
+.svg-vektor4782 {
+  position: absolute;
+  top: 379px;
+  left: 1225px;
+}
+
+.svg-vektor4788 {
+  position: absolute;
+  top: 478px;
+  left: 1247px;
+}
+
+.svg-vektor4791 {
+  position: absolute;
+  top: 663px;
+  left: 1345px;
+}
+
+.svg-star2 {
+  position: absolute;
+  top: 94px;
+  left: 63px;
+}
+
+.svg-star3 {
+  position: absolute;
+  top: 69px;
+  left: 156px;
+}
+
+.svg-star5 {
+  position: absolute;
+  top: 538px;
+  left: 948px;
+}
+
+.svg-star4 {
+  position: absolute;
+  top: 568px;
+  left: 1013px;
+}
+
 .header {
   padding-top: 196px;
+  padding-bottom: 156px;
+  position: relative;
+  overflow: hidden;
 }
 
 .top-box {
   margin-bottom: 48px;
+  margin-left: 120px;
+  position: relative;
 }
 
 .break {
@@ -54,6 +119,42 @@ body {
   text-align: left;
 }
 
+.top-animation {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 30px;
+  background: rgb(188, 236, 48);
+  color: #fff;
+}
+.top-animation__track {
+  display: inline-flex;
+  align-items: center;
+  gap: 51px;
+  white-space: nowrap;
+  animation: top-marquee 25s linear infinite;
+}
+.top-animation .animation-text {
+  color: rgb(32, 32, 39);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  text-align: left;
+}
+.top-animation img {
+  flex-shrink: 0;
+}
+
+@keyframes top-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 .bold {
   font-weight: 600;
 }
@@ -75,6 +176,12 @@ body {
   font-weight: 600;
   line-height: 141.69%;
   text-align: center;
+  margin-left: 120px;
+}
+
+.top-button:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .abtgames-box {
@@ -93,6 +200,7 @@ body {
   letter-spacing: 0px;
   text-align: left;
   padding-top: 94px;
+  padding-left: 120px;
 }
 
 .abtgames-text {
@@ -104,6 +212,7 @@ body {
   text-align: left;
   padding-top: 24px;
   padding-bottom: 72px;
+  padding-left: 120px;
 }
 
 .abtgames {
@@ -111,13 +220,25 @@ body {
   grid-template-columns: repeat(12, 1fr);
   gap: 32px;
   padding-bottom: 50px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.abtgames-frame {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .abtgames__item {
   border-radius: 30px;
   box-shadow: 0px 12.61px 42.2511901855px -7.57px rgba(0, 0, 0, 0.13);
   background: rgb(255, 255, 255);
-  grid-column: span 4;
+}
+
+.abtgames__item:hover {
+  transform: scale(1.1);
 }
 
 .abtgames__item_1 .abtgames-img {
@@ -150,7 +271,7 @@ body {
 }
 
 .abtgames-name {
-  padding: 32px;
+  padding: 32px 32px 36px 36px;
 }
 
 .game-numb {
