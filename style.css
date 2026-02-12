@@ -85,6 +85,27 @@ body {
   left: 1013px;
 }
 
+.svg-star1 {
+  position: absolute;
+  top: 77px;
+  right: -142.56px;
+  z-index: 0.5;
+}
+
+.svg-star11 {
+  position: absolute;
+  top: 770px;
+  left: 25px;
+  z-index: 0.5;
+}
+
+.svg-star12 {
+  position: absolute;
+  top: 822px;
+  left: 40px;
+  z-index: 0.5;
+}
+
 .header {
   padding-top: 196px;
   padding-bottom: 156px;
@@ -184,12 +205,18 @@ body {
   color: rgb(0, 0, 0);
 }
 
-.abtgames-box {
+.abt {
   background: rgb(32, 32, 39);
   background-image: url(img/body-bkg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+}
+
+.abtgames-box {
+  position: relative;
+  overflow: hidden;
 }
 
 .title {
@@ -229,6 +256,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  z-index: 1;
 }
 
 .abtgames__item {
